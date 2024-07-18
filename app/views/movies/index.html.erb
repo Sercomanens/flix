@@ -1,5 +1,9 @@
 <ul>
   <%@movies.each do |movie|%>
-    <li><%=movie%></li>
+    <li>
+      <strong><%=movie.name%></strong>
+      Rating: <%=movie.rating%>
+      Total Gross: <%=movie.total_gross%>
+      </li>
     <%end%>
 </ul>
